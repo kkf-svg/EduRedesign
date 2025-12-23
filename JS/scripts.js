@@ -1,7 +1,4 @@
-let currentSlide = 0;
-let slides;
-let totalSlides;
-let slider;
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector(".navbar");
@@ -48,7 +45,7 @@ const slides = document.querySelectorAll('.news-item');
 let idx = 0;
 
 function showSlide() {
-    const slideWidth = slides[0].offsetWidth + 32; 
+    const slideWidth = slides[0].offsetWidth + 29; 
     const maxIdx = slides.length - Math.floor(wrap.parentElement.offsetWidth / slideWidth);
     
     if (idx > maxIdx) idx = 0;
@@ -73,4 +70,77 @@ setInterval(() => {
 }, 7000);
 
 showSlide();
+
+
 });
+
+/* ======================
+   Progres Bar for Alumni Slider
+   adapted from: https://www.w3schools.com/howto/howto_js_slideshow.asp
+   and https://www.w3schools.com/howto/howto_js_progressbar.asp
+====================== */
+
+let alumniIndex = 1;
+let progressTimer = null;
+let autoSlide = null; // auto-slide interval
+
+function plusSlides(n) {
+  showSlides(alumniIndex += n);
+}
+
+function moveProgress(current, total) {
+  const elem = document.getElementById("alumniProgress");
+  if (!elem) return;
+
+  let width = ((current - 1) / total) * 100;
+  clearInterval(progressTimer);
+
+  progressTimer = setInterval(frame, 20);
+
+  function frame() {
+    if (width >= (current / total) * 100) {
+      clearInterval(progressTimer);
+    } else {
+      width++;
+      elem.style.width = width + "%";
+    }
+  }
+}
+
+function showSlides(n) {
+  const slides = document.getElementsByClassName("alumni-slide");
+  if (!slides.length) return;
+
+  if (n > slides.length) alumniIndex = 1;
+  if (n < 1) alumniIndex = slides.length;
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[alumniIndex - 1].style.display = "block";
+  moveProgress(alumniIndex, slides.length);
+}
+
+// W3Schools-style auto-slide
+function startAutoSlide() {
+  autoSlide = setInterval(() => plusSlides(1), 4000); 
+}
+
+function stopAutoSlide() {
+  clearInterval(autoSlide);
+}
+
+// Initialize and add pause-on-hover
+document.addEventListener("DOMContentLoaded", () => {
+  showSlides(alumniIndex);
+  startAutoSlide();
+
+  const slider = document.querySelector(".alumni-card-container");
+  if (slider) {
+    slider.addEventListener("mouseenter", stopAutoSlide); 
+    slider.addEventListener("mouseleave", startAutoSlide); 
+  }
+});
+
+
