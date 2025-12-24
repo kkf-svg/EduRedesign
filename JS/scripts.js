@@ -37,40 +37,47 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // News Slider Functionality adapted from  : https://www.geeksforgeeks.org/html/building-a-carousel-with-vanilla-javascript/
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
+const newsSection = document.querySelector('.news-section');
+const prev = newsSection.querySelector('.slider-btn.prev');
+const next = newsSection.querySelector('.slider-btn.next');
 const wrap = document.getElementById('news-slider'); 
 const slides = document.querySelectorAll('.news-item');
 
 let idx = 0;
 
 function showSlide() {
-    const slideWidth = slides[0].offsetWidth + 29; 
-    const maxIdx = slides.length - Math.floor(wrap.parentElement.offsetWidth / slideWidth);
-    
-    if (idx > maxIdx) idx = 0;
-    if (idx < 0) idx = maxIdx;
+  const slideStyle = getComputedStyle(slides[0]);
+  const gap = parseInt(slideStyle.marginRight) || 0;
+  const slideWidth = slides[0].offsetWidth + 25;
 
-    wrap.style.transform = `translateX(-${idx * slideWidth}px)`;  
+  const visibleSlides = Math.floor(
+    wrap.parentElement.offsetWidth / slideWidth
+  );
+  const maxIdx = slides.length - visibleSlides;
+
+  if (idx > maxIdx) idx = 0;
+  if (idx < 0) idx = maxIdx;
+
+  wrap.style.transform = `translateX(-${idx * slideWidth}px)`;
 }
 
 next.addEventListener('click', () => {
-    idx++;
-    showSlide();
+  idx++;
+  showSlide();
 });
 
 prev.addEventListener('click', () => {
-    idx--;
-    showSlide();
+  idx--;
+  showSlide();
 });
 
 setInterval(() => {
-    idx++;
-    showSlide();
-}, 7000);
+  idx++;
+  showSlide();
+}, 3000);
 
+window.addEventListener('resize', showSlide);
 showSlide();
-
 
 });
 

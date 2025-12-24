@@ -39,28 +39,31 @@
     </div>
   </div>
     <div class="container nav-content">
-      <a href="../index.html" class="logo" aria-label="COSTAATT home">
-        <img src="../Img/site-logo-new.svg" alt="COSTAATT logo"  fetchpriority="high">
+      <a href="#" class="logo" aria-label="COSTAATT home">
+        <img src="Img/site-logo-new.svg" alt="COSTAATT logo"  fetchpriority="high">
       </a>
 
       <!-- Mobile toggle button -->
       <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
         <i class="fa-solid fa-bars" aria-hidden="true"></i>
       </button>
+      
 
       <!--main navigation panel -->
       <div class="menu-panel">
  <nav class="menu" aria-label="Main navigation">
         <ul class="nav-links">
-          <li class="dropdown has-dropdown">
-            <button class="dropbtn dropdown-toggle" aria-expanded="false">Admissions <i class="fa-solid fa-caret-down"></i></button>
-            <ul class="dropdown-content dropdown-menu">
-              <li><a href="#">Admission Counselors</a></li>
-              <li><a href="#">Application Process</a></li>
-              <li><a href="#">Financing</a></li>
-              <li><a href="#">Programme Details</a></li>
-            </ul>
-          </li>
+         <li class="dropdown has-dropdown">
+          <a href="Html/admissions.html" class="dropbtn dropdown-toggle" aria-expanded="false">
+            Admissions <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="dropdown-content dropdown-menu">
+            <li><a href="#">Admission Counselors</a></li>
+            <li><a href="#">Application Process</a></li>
+            <li><a href="#">Financing</a></li>
+            <li><a href="Html/admissions.html">Programme Details</a></li>
+          </ul>
+        </li>
           <li class="dropdown has-dropdown">
             <button class="dropbtn dropdown-toggle" aria-expanded="false">Academics <i class="fa-solid fa-caret-down"></i></button>
             <ul class="dropdown-content dropdown-menu">
@@ -109,13 +112,24 @@
           </li>
         </ul>
       </nav>
+      </div>
 
 
         <div class="nav-search">
           <form action="#" role="search">
             <label for="site-search" class="sr-only">Search the site</label>
-            <input id="site-search" name="q" type="search" placeholder="Search" />
+            <input id="site-search" name="q" type="search" placeholder="Search">
             <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
           </form>
         </div>
+        </div>
   </header>
+
+  <!--end of main navigation panel -->
+
+  <!--Hero Content-->
+  <section class="hero admissions-hero">
+    <div class="container hero-content">
+      <h1>Admissions</h1>
+      <p>Your journey to success starts here. Explore our admissions process and take the first step towards a brighter future with COSTAATT.</p>
+    </div>

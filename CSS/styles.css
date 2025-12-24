@@ -312,7 +312,10 @@ html, body {
   position: relative;
   overflow: hidden; 
   width: 100%;
+
 }
+
+
 
 .news-list {
   display: flex; 
@@ -449,7 +452,7 @@ html, body {
 
 /* Left side image */
 .alumni-photo {
-  flex: 0 0 40%;                  /* about 40% width */
+  flex: 0 0 40%;                  
   min-height: 260px;
   background: #f3f3f3;
 }
@@ -457,7 +460,7 @@ html, body {
 .alumni-photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;              /* similar to your cropped image */
+  object-fit: cover;              
 }
 
 /* Right side text */
@@ -623,6 +626,34 @@ html, body {
   outline-offset: 3px;
 }
 
+.contact-footer {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-footer a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.contact-footer i {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.contact-footer a:hover,
+.contact-footer a:focus-visible {
+  color: var(--primary-color);
+  text-decoration: underline;
+  outline: none;
+}
+
 /* ===== FOOTER BOTTOM BAR ===== */
 .footer-bottom {
   background-color: var(--primary-color);
@@ -696,6 +727,9 @@ html, body {
     max-height: 3rem;           
   }
 
+  .top-actions{
+    display: none;
+  }
 
   .navbar.menu-open .menu-panel {
     position: fixed;
@@ -794,6 +828,18 @@ html, body {
   .social-links {
     justify-content: center;
   }
+
+  .social-section {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .contact-footer {
+    align-items: center;
+  }
 }
 
 @media(max-width: 1024px) {
@@ -822,7 +868,7 @@ html, body {
 @media (max-width: 1024px) and (min-width: 769px) {
   .footer-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for tablet */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     text-align: left;
   }
