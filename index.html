@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-COSTAATT</title>
     <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
 
         
 </head>
@@ -40,7 +40,7 @@
   </div>
     <div class="container nav-content">
       <a href="#" class="logo" aria-label="COSTAATT home">
-        <img src="Img/LOGO-color-new.svg" alt="COSTAATT logo"  fetchpriority="high"/>
+        <img src="Img/site-logo-new.svg" alt="COSTAATT logo"  fetchpriority="high"/>
       </a>
 
       <!-- Mobile toggle button -->
@@ -52,15 +52,17 @@
       <div class="menu-panel">
  <nav class="menu" aria-label="Main navigation">
         <ul class="nav-links">
-          <li class="dropdown has-dropdown">
-            <button class="dropbtn dropdown-toggle" aria-expanded="false">Admissions <i class="fa-solid fa-caret-down"></i></button>
-            <ul class="dropdown-content dropdown-menu">
-              <li><a href="#">Admission Counselors</a></li>
-              <li><a href="#">Application Process</a></li>
-              <li><a href="#">Financing</a></li>
-              <li><a href="#">Programme Details</a></li>
-            </ul>
-          </li>
+         <li class="dropdown has-dropdown">
+          <a href="Html/admissions.html" class="dropbtn dropdown-toggle" aria-expanded="false">
+            Admissions <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="dropdown-content dropdown-menu">
+            <li><a href="#">Admission Counselors</a></li>
+            <li><a href="#">Application Process</a></li>
+            <li><a href="#">Financing</a></li>
+            <li><a href="Html/admissions.html">Programme Details</a></li>
+          </ul>
+        </li>
           <li class="dropdown has-dropdown">
             <button class="dropbtn dropdown-toggle" aria-expanded="false">Academics <i class="fa-solid fa-caret-down"></i></button>
             <ul class="dropdown-content dropdown-menu">
@@ -121,15 +123,14 @@
   </header>
 
   <!-- Hero Section -->
-   <section class ="hero">
-    <div class = "hero-image">
-      <div class="hero-text">
-        <h1>Welcome to COSTAATT</h1>
-        <p>Gain Future Skills Now</p>
-        <a href="#" class="btn-apply-now">Apply Now</a>
-      </div>
-    </div>
-    </section>
+   <section class="hero">
+  <div class="hero-text">
+    <h1>Welcome to COSTAATT</h1>
+    <p>Gain Future Skills Now</p>
+    <a href="#" class="btn-apply-now">Apply Now</a>
+  </div>
+</section>
+
   
 <!-- News Section-->
 <section class="news-section container">
@@ -137,37 +138,37 @@
   <div class="slider-container">
     <div class="news-list" id="news-slider">
       <div class="news-item mySlide">
-        <img src="IMG/Dr-Cumberbatch.webp" alt="COSTAATT VP of Student Affairs appointed as Member of Service Public Commission  " />
+        <img src="IMG/Dr-Cumberbatch.avif" alt="COSTAATT VP of Student Affairs appointed as Member of Service Public Commission "  loading="lazy"/>
         <p>Date: 13th November,2025</p>
         <h4>COSTAATT Vice President of Student Affairs appointed as Member of the Public Service Commission</h4>
         <button class="news-btn">Read More</button>
       </div>
       <div class="news-item mySlide">
-        <img src="IMG/grad.webp" alt="25th Anniversary Graduation ceremony" />
+        <img src="IMG/grad.avif" alt="25th Anniversary Graduation ceremony"  loading="lazy"/>
         <p>Date: 27th November,2025</p>
         <h4>Future Forward: COSTAATT Celebrates Its 25th Anniversary with the Graduation of Over 800 Students</h4>
         <button class="news-btn">Read More</button>
       </div>
       <div class="news-item mySlide">
-        <img src="IMG/Keith-Nurse.jpg" alt="Keith Nurse Welcomes New Students"  />
+        <img src="IMG/Keith-Nurse.avif" alt="Keith Nurse Welcomes New Students"  loading="lazy" />
         <p>Date: 6th September,2025</p>
         <h4>New Student Orientation 2025 Welcome From COSTAATT President Dr. Keith Nurse</h4>
         <button class="news-btn">Read More</button>
       </div>
       <div class="news-item mySlide">
-        <img src="IMG/RHA_1.webp" alt="Strengthening Health Sector Training Through Collaboration" />
+        <img src="IMG/RHA_1.avif" alt="Strengthening Health Sector Training Through Collaboration"  loading="lazy"/>
         <p>Date: 28th November,2025</p>
         <h4>Strengthening Health Sector Training Through Collaboration.</h4>
         <button class="news-btn">Read More</button>
       </div>
       <div class="news-item mySlide">
-        <img src="IMG/embassy-visit-6.webp" alt="US Embassy Visit at COSTAATT" />
+        <img src="IMG/embassy-visit-6.avif" alt="US Embassy Visit at COSTAATT"  loading="lazy"/>
         <p>Date: 28th November,2025</p>
         <h4>US Embassy Visit at COSTAATT</h4>
         <button class="news-btn">Read More</button>
       </div>
       <div class="news-item mySlide">
-        <img src="IMG/China-2.jpg" alt="Faculty Members represent COSTAATT at a seminar on Medical Quality Management and Control System for Trinidad and Tobago" />
+        <img src="IMG/China-2.avif" alt="Faculty Members represent COSTAATT at a seminar on Medical Quality Management and Control System for Trinidad and Tobago" loading="lazy" />
         <p>Date: 12th September,2025</p>
         <h4>Faculty Members represent COSTAATT at a Seminar on Medical Quality Management and Control System for Trinidad and Tobago.</h4>
         <button class="news-btn">Read More</button>
@@ -189,7 +190,8 @@
   <div class="alumni-slide">
     <div class="alumni-card-inner">
       <div class="alumni-photo">
-        <img src="Img/Gabrielle-Martin.png" alt="Gabrielle Martin">
+        <img src="Img/gabrielle-martin.avif" alt="Gabrielle Martin" loading="lazy">
+
       </div>
 
       <div class="alumni-content">
@@ -201,7 +203,7 @@
           <span>Current Role:</span> Entrepreneur, Rejuvinity Body and Nail Spa
         </p>
         <p class="label">
-          <span>Achievement:</span>
+          <span>Achievements:</span>
          Senior Clerk at Teachers Credit Union Limited. Owens and operates Rejuvinity Body and Nail Spa.
         </p>
       </div>
@@ -212,28 +214,28 @@
   <div class="alumni-slide">
     <div class="alumni-card-inner">
       <div class="alumni-photo">
-        <img src="Img/ryan.png" alt="Ryan Bachoo">
+        <img src="Img/ryan.avif" alt="Ryan Bachoo" loading="lazy">
       </div>
 
       <div class="alumni-content">
         <p class="label"><span>Name:</span> Ryan Bachoo</p>
         <p class="label"><span>Degree Program:</span> AAS in Journalism and Public Relations; BA in Mass Communications</p>
         <p class="label"><span>Current Role:</span> Lead Editor – Newsgathering, Guardian Media Limited</p>
-        <p class="label"><span>Achievement:</span> Covered many United Nations events , produced documentaries , won several awards and published a novel.</p>
+        <p class="label"><span>Achievements:</span> Covered many United Nations events , produced documentaries , won several awards and published a novel.</p>
       </div>
     </div>
   </div>
     <div class="alumni-slide">
     <div class="alumni-card-inner">
       <div class="alumni-photo">
-        <img src="Img/Teocah-Arieal-Ainka-Dove.png" alt="Teocah Arieal Ainka Dove">
+        <img src="Img/Teocah-Arieal-Ainka-Dove.avif" alt="Teocah Arieal Ainka Dove" loading="lazy">
       </div>
 
       <div class="alumni-content">
         <p class="label"><span>Name:</span> Teocah Arieal Ainka Dove</p>
         <p class="label"><span>Degree Program:</span> AAS in Journalism and Public Relations</p>
         <p class="label"><span>Current Role:</span> Programme Officer – Gender and Entrepreneurship at the Caribbean Export Development Agency</p>
-        <p class="label"><span>Achievement:</span> Leader of the GRIT project to enhance competitive women entrepreneurs , advised major initiatives with USAID, EU, GIZ. Founder  of Hacoet Social Innovative Solutions. Co-Founder of Hacoet Catering and Training Centre </p>
+        <p class="label"><span>Achievements:</span> Leader of the GRIT project to enhance competitive women entrepreneurs , advised major initiatives with USAID, EU, GIZ. Founder  of Hacoet Social Innovative Solutions. Co-Founder of Hacoet Catering and Training Centre </p>
       </div>
     </div>
   </div>
@@ -252,13 +254,89 @@
 
 </section>
 
-<!--Testimonials Section-->
 
+<!-- Responsive Footer Section -->
+<footer class="costaatt-footer" role="contentinfo">
 
-<!-- Footer Section-->
+  <div class="container footer-content">
 
-      
+    <!-- Logo  -->
+    <section class="footer-section">
+      <img src="Img/LOGO-color-new.svg" alt="COSTAATT Logo" class="footer-logo" loading="lazy">
+    </section>
 
-<script src="JS/scripts.js"></script>
+    
+    <!-- Student Links -->
+    <nav class="footer-section" aria-label="Student links">
+      <h4>Students</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">Campus Life</a></li>
+        <li><a href="#">Legal</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </nav>
+
+    <!-- Services -->
+    <nav class="footer-section" aria-label="Institutional services">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Corporate & Community</a></li>
+        <li><a href="#">Faculty & Staff Resources</a></li>
+        <li><a href="#">Procurement</a></li>
+      </ul>
+    </nav>
+
+    <!-- Resources -->
+    <nav class="footer-section" aria-label="Additional resources">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">COSTAATT TechHub</a></li>
+        <li><a href="#">Innovation Cafe</a></li>
+        <li><a href="#">Alumni Success Stories</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Support -->
+    <nav class="footer-section" aria-label="Support services">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Desk</a></li>
+        <li><a href="#">Career Services</a></li>
+        <li><a href="#">Library Services</a></li>
+        <li><a href="#">Job Board</a></li>
+      </ul>
+    </nav>
+
+    <!-- Social Media -->
+    <section class="footer-section social-section" aria-label="Social media">
+      <h4>Connect With Us</h4>
+      <div class="social-links">
+        <a href="#" aria-label="COSTAATT on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="#" aria-label="COSTAATT on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="COSTAATT on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+        <a href="#" aria-label="COSTAATT on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2024 COSTAATT. All rights reserved.</p>
+  </div>
+
+</footer>
+
+<button
+  id="backToTop"
+  aria-label="Scroll back to top"
+  title="Back to top">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<script src="JS/scripts.js" defer></script>
 </body>
 </html>

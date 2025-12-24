@@ -143,4 +143,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// Back to Top Button Functionality adapted from: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+const backToTopBtn = document.getElementById("backToTop");
 
+  window.addEventListener("scroll", () => {
+    if (document.documentElement.scrollTop > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });

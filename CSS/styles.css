@@ -1,6 +1,6 @@
 /* ===== Root colors ===== */
 :root {
-  --primary-color: #5B2D9B;
+  --primary-color: #55249b;
   --secondary-color: #F39C12;
   --light-color: #fff;
   --dark-color: #333;
@@ -23,7 +23,7 @@ html, body {
   color: #333;
 }
 
-/* ===== Navbar (fixed) ===== */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -259,7 +259,7 @@ html, body {
 
 /*Hero Section*/
 .hero{
-  background: url('../Img/city.jpg') no-repeat center center/cover;
+  background: url('../Img/city.avif') no-repeat center center/cover;
   height: 75vh;
   display: flex;
   justify-content: center;
@@ -310,13 +310,13 @@ html, body {
 
 .slider-container {
   position: relative;
-  overflow: hidden; /* Hides overflowing cards */
+  overflow: hidden; 
   width: 100%;
 }
 
 .news-list {
-  display: flex; /* Horizontal layout for sliding */
-  transition: transform 0.5s ease; /* Smooth slide animation */
+  display: flex; 
+  transition: transform 0.5s ease;
   gap: 2rem;
 }
 
@@ -433,7 +433,7 @@ html, body {
 
 .alumni-card-container {
   padding: 2rem 1rem;
-  background: linear-gradient(135deg, #fff 60%, var(--secondary-color) 50%, var(--primary-color) 70%);
+  background: linear-gradient(135deg, rgb(255, 255, 255) 60%, var(--secondary-color) 50%, var(--primary-color) 70%);
 }
 
 /* White panel holding image + text */
@@ -442,7 +442,7 @@ html, body {
   margin: 0 auto;
   background: #f1eeee;
   border-radius: 12px;
-  display: flex;                  /* two columns */
+  display: flex;                 
   align-items: stretch;
   overflow: hidden;
 }
@@ -539,6 +539,126 @@ html, body {
   transition: width 0.4s ease;
 }
 
+.costaatt-footer {
+  background-color: var(--bg-light);
+  border-top: 5px solid var(--costaatt-purple);
+  color: var(--text-dark);
+  font-family: Arial, sans-serif;
+}
+
+/* ===== FOOTER GRID ===== */
+.footer-content {
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px 20px;
+  display: grid;
+ grid-template-columns: repeat(6, 1fr);
+  gap: 2px;
+}
+
+/* ===== FOOTER SECTIONS ===== */
+.footer-section h4 {
+  color: var(--costaatt-purple);
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ===== LIST RESET ===== */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section li:hover{
+  color: var(--primary-color);
+  transition: 0.3s ease;
+}
+
+/* ===== LINKS ===== */
+.footer-section a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-section a:hover,
+.footer-section a:focus-visible {
+  color: var(--costaatt-purple);
+  text-decoration: underline;
+  outline: none;
+}
+
+/* ===== LOGO ===== */
+.footer-logo {
+  max-width: 180px;
+  margin-bottom: 10px;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.social-links {
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.social-links a {
+  font-size: 1.2rem;
+  color: var(--costaatt-purple);
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  color: var(--primary-color);
+  outline: 3px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+/* ===== FOOTER BOTTOM BAR ===== */
+.footer-bottom {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.85rem;
+}
+
+/* ===== BACK TO TOP BUTTON ===== */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+
+  background-color: var(--secondary-color);
+  color: black;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#backToTop:hover,
+#backToTop:focus-visible {
+  background-color: var(--primary-color);
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* ===== End of Footer ===== */
 
 
 /* ===== Mobile styles ===== */
@@ -640,6 +760,7 @@ html, body {
     justify-content: flex-start;
     gap: 0.5rem;
   }
+  
       .news-list {
     grid-template-columns: 2fr;
   }
@@ -665,10 +786,55 @@ html, body {
   .alumni-progress {
     width: 100%;
   }
+
+   .footer-content {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
 }
 
+@media(max-width: 1024px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    gap: 20px;               
+  }
 
+  .footer-section {
+    width: 100%;            
+    max-width: 300px;        
+    text-align: center;      
+  }
 
+  .footer-contact {
+    justify-content: center; 
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for tablet */
+    gap: 20px;
+    text-align: left;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
 
 /* Extra small devices <=480px */
 @media(max-width: 30rem) {
