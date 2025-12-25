@@ -1,5 +1,4 @@
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector(".navbar");
   const navToggle = document.querySelector(".nav-toggle");
@@ -48,7 +47,10 @@ let idx = 0;
 function showSlide() {
   const slideStyle = getComputedStyle(slides[0]);
   const gap = parseInt(slideStyle.marginRight) || 0;
-  const slideWidth = slides[0].offsetWidth + 25;
+ const slideWidth =
+  slides[0].offsetWidth +
+  parseInt(getComputedStyle(wrap).gap || 0);
+
 
   const visibleSlides = Math.floor(
     wrap.parentElement.offsetWidth / slideWidth
@@ -75,6 +77,12 @@ setInterval(() => {
   idx++;
   showSlide();
 }, 3000);
+
+function changeSlide(n) {
+  idx += n;
+  showSlide();
+}
+
 
 window.addEventListener('resize', showSlide);
 showSlide();
@@ -167,3 +175,5 @@ const backToTopBtn = document.getElementById("backToTop");
       behavior: "smooth"
     });
   });
+
+  

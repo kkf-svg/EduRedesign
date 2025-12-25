@@ -125,7 +125,7 @@ html, body {
   transition: ease 0.3s;
 }
 
-/* ===== Main Navbar content ===== */
+/*Main Navbar content*/
 .nav-content {
   display: flex;
   justify-content: space-between;
@@ -256,6 +256,14 @@ html, body {
   font-size: 1rem;
 }
 
+.section-title {
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: var(--dark-color);
+}
+
+
 
 /*Hero Section*/
 .hero{
@@ -315,8 +323,92 @@ html, body {
 
 }
 
+/* Programs Section */
+.program-section {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+}
 
+.program-title {
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
 
+.program-card svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  fill: var(--primary-color);
+}
+
+.program-card:hover svg {
+  fill: var(--secondary-color);
+  transition: fill 0.3s ease;
+}
+.program-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--dark-color);
+  margin-bottom: 2.5rem;
+}
+
+/* Grid layout */
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Program Cards */
+.program-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.75rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.program-card h3 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+}
+
+.program-card p {
+  font-size: 0.95rem;
+  color: var(--dark-color);
+  margin-bottom: 1.25rem;
+  line-height: 1.4;
+}
+
+.program-link {
+  align-self: flex-start;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.program-link:hover {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  transform: translateY(-2px);
+}
+/*news section*/
 .news-list {
   display: flex; 
   transition: transform 0.5s ease;
@@ -423,6 +515,78 @@ html, body {
   transition: 0.3s ease;
 }
 
+/* Get Help Section */
+.get-help {
+  padding: 5rem 1rem;
+  background: linear-gradient(
+    180deg,
+    #f4f4f4 0%,
+    #ffffff 100%
+  );
+}
+
+.get-help p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  font-size: 1.05rem;
+  color: var(--dark-color);
+}
+
+/* Action cards */
+.help-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.help-card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 2rem 1.5rem;
+  text-decoration: none;
+  color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Icon */
+.help-card i {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+/* Text */
+.help-card span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+
+.help-card:hover,
+.help-card:focus-visible {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  background-color: #fdf8f0;
+}
+
+.help-card:hover i,
+.help-card:focus-visible i {
+  color: var(--secondary-color);
+}
+
+/* Accessibility */
+.help-card:focus-visible {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 4px;
+}
+
 .alumni-card-section {
   padding: 4rem 0;
 }
@@ -439,7 +603,6 @@ html, body {
   background: linear-gradient(135deg, rgb(255, 255, 255) 60%, var(--secondary-color) 50%, var(--primary-color) 70%);
 }
 
-/* White panel holding image + text */
 .alumni-card-inner {
   max-width: 1100px;
   margin: 0 auto;
@@ -481,6 +644,7 @@ html, body {
 .alumni-content .label span {
   font-weight: 600;               
   margin-right: 0.3rem;
+  font-weight: bold;
 }
 
 .alumni-slide {
@@ -558,6 +722,7 @@ html, body {
  grid-template-columns: repeat(6, 1fr);
   gap: 2px;
 }
+
 
 /* ===== FOOTER SECTIONS ===== */
 .footer-section h4 {
