@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Apply to COSTAATT with ease. Explore programmes, admissions requirements, financial aid options, and student support services designed to help you succeed.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-COSTAATT</title>
     <link rel="stylesheet" href="../CSS/styles.css">
@@ -13,7 +14,7 @@
         
 </head>
 <body>
-
+ <a href="#main-content" class="skip-link">Skip to main content</a>
   <!-- Navigation -->
   <header class="navbar">
     <!-- Top bar: contact info -->
@@ -126,11 +127,776 @@
   </header>
 
   <!--end of main navigation panel -->
+<!-- Hero Content -->
+<section class="hero admissions-hero">
+  <img
+    src="../Img/admissions-hero.avif"
+    alt=""
+    class="hero-bg"
+    fetchpriority="high"
+    decoding="async"
+  >
+  <div class="container hero-content">
 
-  <!--Hero Content-->
-  <section class="hero admissions-hero">
-    <div class="container hero-content">
-      <h1>Admissions</h1>
-      <p>Your journey to success starts here. Explore our admissions process and take the first step towards a brighter future with COSTAATT.</p>
+    <h1>Admissions</h1>
+    <p>
+      Your journey to success starts here. Explore our admissions process and
+      take the first step towards a brighter future with COSTAATT.
+    </p>
+
+    <!-- Button that opens modal -->
+     <button class="btn-apply-now"
+      aria-haspopup="dialog"
+      aria-expanded="false"
+    >
+      Apply Now
+    </button>
+    <button
+      class="admission-mega-menu-trigger"
+      aria-haspopup="dialog"
+      aria-expanded="false"
+    >
+      View Academic Programs
+    </button>
+  </div>
+</section>
+
+<!-- Mega menu as modal -->
+<div class="mega-modal-overlay" aria-hidden="true">
+  <div
+    class="mega-menu mega-modal"
+    id="mega-menu-body"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="mega-menu-title"
+  >
+    <button class="mega-close" aria-label="Close">×</button>
+
+    <div class="mega-menu-content">
+      
+      <div class="mega-filter">
+    <label for="program-filter" class="sr-only">Filter Programs</label>
+    <input type="text" id="program-filter" placeholder="Search programs...">
+  </div>
+
+      <!-- Short Courses -->
+      <section class="mega-column" aria-label="Short Courses">
+        <h3 id="mega-menu-title">Short Courses</h3>
+
+        <div class="subcolumns" role="region" aria-label="Communication and Media Studies">
+          <h4>Communication and Media Studies</h4>
+          <ul>
+            <li><a href="#">Introduction to Mass Communication</a></li>
+            <li><a href="#">Copywriting</a></li>
+            <li><a href="#">Speech Writing</a></li>
+            <li><a href="#">Photojournalism</a></li>
+            <li><a href="#">Understanding Culture, Communication and Conflict</a></li>
+          </ul>
+        </div>
+
+        <div class="subcolumns"   role="region" aria-label="Digital Media and Technology">
+          <h4>Digital Media &amp; Technology</h4>
+          <ul>
+            <li><a href="#">Introduction to Graphic Design</a></li>
+            <li><a href="#">Digital Photography</a></li>
+            <li><a href="#">Introduction to Video Production</a></li>
+            <li><a href="#">Web Page Design</a></li>
+            <li><a href="#">Computer Literacy</a></li>
+          </ul>
+        </div>
+
+        <div class="subcolumns"   role="region" aria-label="Office Administration and Workplace Communication">
+          <h4>Office Administration &amp; Workplace Communication</h4>
+          <ul>
+            <li><a href="#">Communication in the Workplace</a></li>
+            <li><a href="#">Advanced Grammar for Office Professionals</a></li>
+            <li><a href="#">Office Communication Management</a></li>
+            <li><a href="#">Image, Etiquette and Protocol</a></li>
+            <li><a href="#">Introduction to Records Management</a></li>
+          </ul>
+        </div>
+
+        <div class="subcolumns"  role="region" aria-label="Business and Management">
+          <h4>Business &amp; Management</h4>
+          <ul>
+            <li><a href="#">The Entrepreneurial Mindset</a></li>
+            <li><a href="#">Customer Service Fundamentals</a></li>
+            <li><a href="#">Introduction to Supervisory Management</a></li>
+            <li><a href="#">Introduction to Project Management</a></li>
+            <li><a href="#">Train the Trainer</a></li>
+          </ul>
+        </div>
+
+        <div class="subcolumns" role="region"  aria-label="Special Education and Developmental Support">
+          <h4>Special Education &amp; Developmental Support</h4>
+          <ul>
+            <li><a href="#">Intellectual and Developmental Disabilities</a></li>
+            <li><a href="#">Monitoring and Facilitating Milestones Development</a></li>
+            <li><a href="#">Understanding Learning Disabilities</a></li>
+            <li><a href="#">Managing Children with Autism Spectrum Disorders</a></li>
+            <li><a href="#">Alternative and Augmentative Communication</a></li>
+          </ul>
+        </div>
+
+        <div class="subcolumns"  role="region" aria-label="Health and Safety">
+          <h4>Health &amp; Safety</h4>
+          <ul>
+            <li><a href="#">Introduction to Emergency Care</a></li>
+            <li><a href="#">Introduction to Infection Prevention and Control</a></li>
+          </ul>
+        </div>
+
+        <div class="subcolumns"  role="region"  aria-label="Food Safety and Hygiene">
+          <h4>Food Safety &amp; Hygiene</h4>
+          <ul>
+            <li><a href="#">Food Plant Sanitation and Hygiene</a></li>
+            <li><a href="#">Food Safety and Hygiene</a></li>
+          </ul>
+        </div>
+
+        <div class="subcolumns" role="region"  aria-label="Tourism and Hospitality">
+          <h4>Tourism &amp; Hospitality</h4>
+          <ul>
+            <li><a href="#">Tour Guiding</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Certificate Programmes -->
+      <section class="mega-column"   aria-label="Certificate Programmes">
+        <h3>Certificate Programmes</h3>
+
+        <div class="subcolumns"  role="region"  aria-label="Health Certificates">
+          <h4>Health</h4>
+          <ul>
+            <li><a href="#">Certificate in Pharmacy Assisting</a></li>
+            <li><a href="#">Certificate in Phlebotomy</a></li>
+            <li><a href="#">Certificate in Emergency Care</a></li>
+          </ul>
+        </div>
+
+        <div class="subcolumns"   role="region" aria-label="Information Technology Certificates">
+          <h4>Information Technology</h4>
+          <ul>
+            <li><a href="#">Certificate in IT - Webpage Development</a></li>
+            <li><a href="#">Certificate in CISCO-CCNA</a></li>
+          </ul>
+        </div>
+
+        <div class="subcolumns"  role="region"  aria-label="Creative Certificates">
+          <h4>Creative Media</h4>
+          <ul>
+            <li><a href="#">Certificate in Graphic Design</a></li>
+            <li><a href="#">Certificate in Music Performance</a></li>
+            <li><a href="#">Certificate in Film and Video Production</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Diplomas -->
+      <section class="mega-column" aria-label="Diplomas">
+        <h3>Diploma</h3>
+
+        <div class="subcolumns" role="region"  aria-label="Health Diploma">
+          <h4>Health</h4>
+          <ul>
+            <li><a href="#">Advanced Diploma in Midwifery</a></li>
+            <li><a href="#">Diploma in District Health Visiting</a></li>
+            <li><a href="#">Diploma in Health Systems and Health Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="subcolumns"  role="region" aria-label="Management Diplomas">
+          <h4>Management</h4>
+          <ul>
+            <li><a href="#">Diploma in Supervisory Management</a></li>
+            <li><a href="#">Diploma in Advertising and Promotions</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Associate Degrees -->
+      <section class="mega-column"   aria-label="Associate Degrees">
+        <h3>Associate Degrees</h3>
+
+        <div class="subcolumns" role="region" aria-label="Health Associate Degrees">
+          <h4>Health</h4>
+          <ul>
+            <li><a href="#">AAS General Nursing</a></li>
+            <li><a href="#">AAS Psychiatric Nursing</a></li>
+          </ul>
+        </div>
+
+        <div class="subcolumns"  role="region" aria-label="Information Technology Associate Degrees">
+          <h4>Information Technology</h4>
+          <ul>
+            <li><a href="#">AAS IT - Webpage Development</a></li>
+            <li><a href="#">AAS Information Technology</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Bachelor's Degrees -->
+      <section class="mega-column" aria-label="Bachelor's Degrees">
+        <h3>Bachelor's Degrees</h3>
+
+        <div class="subcolumns"  role="region" aria-label="Nursing Bachelor's Degrees">
+          <h4>Nursing</h4>
+          <ul>
+            <li><a href="#">BSc Nursing</a></li>
+            <li><a href="#">BSc Psychiatric Nursing</a></li>
+          </ul>
+        </div>
+
+        <div class="subcolumns"  role="region" aria-label="Information Technology Bachelor's Degrees">
+          <h4>Information Technology</h4>
+          <ul>
+            <li><a href="#">BSc Information Technology</a></li>
+            <li><a href="#">BSc Networking</a></li>
+          </ul>
+        </div>
+
+        <div class="subcolumns"  role="region" aria-label="Business Bachelor's Degrees">
+          <h4>Business</h4>
+          <ul>
+            <li><a href="#">BBA Human Resource Management</a></li>
+            <li><a href="#">BBA Marketing</a></li>
+            <li><a href="#">BBA Accounting</a></li>
+          </ul>
+        </div>
+      </section>
+
     </div>
+  </div>
+</div>
+
+<!--Application Process-->
+<main id="main-content">
+<section class="application container">
+  <h3 class="section-title">Navigate the Application Process</h3>
+  <p class="section-intro">
+    Our streamlined application process makes it easy to apply online.
+  </p>
+
+  <div class="application-steps">
+    <article class="step-card">
+      <span class="step-number">1</span>
+      <h4>Choose Your Programme</h4>
+      <p>
+        Explore Nursing, Medical Laboratory Technology, Biology, and more to
+        find the programme that fits your goals.
+      </p>
+       <a href="#" class="view-more-btn">Learn more</a>
+    </article>
+
+    <article class="step-card">
+      <span class="step-number">2</span>
+      <h4>Complete the Online Application</h4>
+      <p>
+        Fill out the application form and provide your personal and academic
+        information.
+      </p>
+       <a href="#" class="view-more-btn">Learn more</a>
+    </article>
+
+    <article class="step-card">
+      <span class="step-number">3</span>
+      <h4>Upload Supporting Documents</h4>
+      <p>
+        Submit transcripts, resumes, and any required supporting documents.
+      </p>
+       <a href="#" class="view-more-btn">Learn more</a>
+    </article>
+
+    <article class="step-card">
+      <span class="step-number">4</span>
+      <h4>Pay Application Fees</h4>
+      <p>
+        Pay applicable fees securely through our online payment system.
+      </p>
+       <a href="#" class="view-more-btn">Learn more</a>
+    </article>
+
+    <article class="step-card">
+      <span class="step-number">5</span>
+      <h4>Track Your Application</h4>
+      <p>
+        Monitor your application status and receive updates online.
+      </p>
+      <a href="#" class="view-more-btn">Learn more</a>
+    </article>
     
+  </div>
+</section>
+
+<!--FAQ Section-->
+<section class="FAQ Container"> 
+  <h3 class="section-title">Frequently Asked Questions (FAQ)</h3>
+  <p class="section-intro">
+    Find answers to common questions about the application process.
+
+  </p>
+
+  <h4 class="faq-group-title">General Questions</h4>
+  <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">Who can apply to COSTAATT?</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p>National, Regional and International students are eligible to apply.</p>
+</div>
+<button class="accordion" aria-expanded="false">
+  <span class="accordion-title">How do I Apply to COSTAATT?</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p>
+    <ul>
+      <li>
+         New and Transfer Applicants: Apply online through the COSTAATT Online Application Portal.
+      </li>
+      <li>
+        Re-Admission Applicants: Download the Re-Admission Application Form, complete it, and email it.
+      </li>
+    </ul>
+</div>
+
+
+   <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">Are There Application Fees?</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <ul>
+      <li>
+        Online Applications: Free
+      </li>
+      <li>
+        Re-Admission Applications (Electronic): $10.00 TTD
+      </li>
+      <li>
+        Paper Applications: $25.00 TTD
+      </li>
+    </ul>
+
+</div>
+
+<h4 class="faq-group-title">Document Submission</h4>
+   <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">What documents do I need to submit with my application?
+</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <ul>
+      <li>
+       General Documents: Valid ID (TT ID card or passport), birth certificate, and academic certificates.
+      </li>
+      <li>
+       Program-Specific Documents: Character references, police certificates, nursing council permits, or job letter (depending on the programme).
+      </li>
+  </ul>
+</div>
+
+  <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">What if I miss the document submission deadline?
+ </span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p>Email Us to request an extension. applications@costaatt.edu.tt
+</p>
+</div>
+
+
+   <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">How do I submit my documents?
+
+</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p>Email documents in JPEG or PDF format to applications@costaatt.edu.tt </p>
+</div>
+
+<h4 class="faq-group-title">GATE and Financial Aid</h4>
+   <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">What is GATE, and am I eligible?
+</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p>The Government Assistance for Tuition Expenses (GATE) programme provides financial support/assistance with tuition fees to eligible citizens of Trinidad and Tobago. For eligibility and application details, visit the Ministry of Education website.
+
+</p>
+</div>
+
+  <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">Are payment plans available?
+</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p>Yes, COSTAATT offers flexible payment plans. Contact the Office of the Bursar for details.</p>
+</div>
+
+
+   <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">Does COSTAATT offer scholarships?
+</span>
+  <span class="accordion-indicator" aria-hidden="true">
+    <i class="fa-solid fa-caret-down"></i>
+  </span>
+</button>
+
+<div class="panel">
+  <p>Yes, COSTAATT offers scholarships for academic excellence, leadership, and financial need. Contact the Financial Aid Office for more information
+
+</p>
+</div>
+
+
+<h4 class="faq-group-title">Programme Specific Questions</h4>
+   <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">What are the requirements for Nursing programmes?
+
+</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p> Nursing Applicants must submit:</p>
+    <ul>
+      <li>
+        Two written character references
+
+      </li>
+      <li>
+A police certificate of character      </li>
+      <li>
+       A Nursing Council permit
+      </li>
+    </ul>
+</div>
+
+  <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">What if I want to change my programme after applying?
+</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p>Contact the Admissions Office to discuss changing your programme. You may need to submit a new application or additional documents.</p>
+</div>
+
+
+   <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">Can I transfer credits from another institution?
+</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p>Yes, COSTAATT accepts transfer credits on a case-by-case basis. Submit your transcripts and course descriptions for evaluation.
+
+</p>
+</div>
+
+
+<h4 class="faq-group-title">After Applying</h4>
+   <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">How will I know if I’ve been accepted?
+</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p>You’ll receive an email with your admission decision and next steps, including registration instructions.</p>
+</div>
+
+  <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">What if I need help with registration?
+</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p>Contact the Office of the Registrar or visit your campus for assistance.</p>
+</div>
+
+
+   <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">Can I defer my admission?
+</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p>Yes, you may request a deferral by contacting the Admissions Office. Deferrals are subject to approval.
+</p>
+</div>
+
+
+<h4 class="faq-group-title">International Students</h4>
+   <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">Can international students apply to COSTAATT?
+
+</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p>Yes, international students are welcome to apply. Additional documents, such as a valid passport and student visa, may be required.
+
+</p>
+</div>
+
+  <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">Does COSTAATT offer housing for international students?
+</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p>COSTAATT does not provide on-campus housing, but the Admissions Office can assist with finding accommodation options.
+
+</p>
+</div>
+
+
+   <button class="accordion" aria-expanded="false">
+  <span class="accordion-title">What are the tuition fees for international students?
+</span>
+  <span class="accordion-indicator" aria-hidden="true">
+<i class="fa-solid fa-caret-down"></i>  </span>
+</button>
+
+<div class="panel">
+  <p>Tuition fees for international students vary by programme. For a detailed breakdown, download the Tuition and Fees Guide.
+
+</p>
+</div>
+
+</section>
+
+
+
+<!--Financial Aid Section-->
+<section class="financial-section">
+  <div class="container">
+    <h3 class="section-title">Financing Options</h3>
+    <p class="section-intro">
+      We understand that investing in your education is a significant decision.
+      Explore a variety of funding options to make your educational goals a reality:
+    </p>
+</div>
+    <div class="financial-grid">
+
+    <article class="financial-card">
+      <h4>Scholarships:</h4>
+      <p>
+        Learn about available scholarships and grants
+      </p>
+       <a href="#" class="view-more-btn">Learn more</a>
+    </article>
+
+   <article class="financial-card">
+      <h4>Financial Aid:</h4>
+      <p>
+       Explore options for student loans and other financial assistance programmes.
+      </p>
+       <a href="#" class="view-more-btn">Learn more</a>
+    </article>
+
+   <article class="financial-card">
+      <h4>GATE:</h4>
+      <p>
+        Understand the Government Assistance for Tuition Expenses (GATE) programme and its eligibility criteria.
+      </p>
+       <a href="http://www.e-gate.gov.tt/gate-app/" class="view-more-btn" aria-label="Learn More About GATE Funding">Learn more</a>
+    </article>
+    </div>
+</section>
+
+<!--Testimonials Section--> 
+<section class="testimonial-slideshow">
+  <h3 class="section-title">What Our Students are Saying</h3>
+  <div class="slideshow-container">
+
+    <div class="mySlides">
+      <img src="../Img/Akeela-Marin.avif" alt="Akeela-Marin" loading="lazy" decoding="async">
+      <p class="quote">"COSTAATT's structure made me feel well-rounded and ready to hit the ground running in management roles."</p>
+      <p class="author">— Akeela Marin</p>
+      <p> Senior Government Communications Specialist, Office of the Prime Minister-Communications</p>
+    </div>
+
+    <div class="mySlides">
+      <img src="../Img/Radicker.avif" alt="Radlicker Conell" loading="lazy" decoding="async">
+      <p class="quote">"COSTAATT's emphasis on holistic education helped me develop a well-rounded perspective, crucial for my work in the NGO sector, tutoring, and Entrepreneurship coaching."</p>
+      <p class="author">— Radlicker Connell</p>
+      <p>President, Youth Transcending Boundaries (Tobago)</p>
+    </div>
+ 
+<a href="#testimonials"
+   class="testimonial-prev"
+   role="button"
+   aria-label="Previous testimonial"
+   onclick="plusSlides(-1); return false;">
+  ❮
+</a>
+
+<a href="#testimonials"
+   class="testimonial-next"
+   role="button"
+   aria-label="Next testimonial"
+   onclick="plusSlides(1); return false;">
+  ❯
+</a>
+
+
+  </div>
+
+  <!-- Dots/Indicators -->
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+
+</section>
+
+
+<!-- Responsive Footer Section -->
+<footer class="costaatt-footer" aria-label="COSTAATT Footer">
+
+  <div class="container footer-content">
+
+    <!-- Logo  -->
+    <div class="footer-section">
+      <img src="../Img/LOGO-color-new.svg" alt="COSTAATT Logo" class="footer-logo" loading="lazy">
+    </div>
+
+    
+    <!-- Student Links -->
+    <nav class="footer-section" aria-label="Student links">
+      <h4>Students</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">Campus Life</a></li>
+        <li><a href="#">Legal</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </nav>
+
+    <!-- Services -->
+    <nav class="footer-section" aria-label="Institutional services">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Corporate & Community</a></li>
+        <li><a href="#">Faculty & Staff Resources</a></li>
+        <li><a href="#">Procurement</a></li>
+      </ul>
+    </nav>
+
+    <!-- Resources -->
+    <nav class="footer-section" aria-label="Additional resources">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">COSTAATT TechHub</a></li>
+        <li><a href="#">Innovation Cafe</a></li>
+        <li><a href="#">Alumni Success Stories</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Support -->
+    <nav class="footer-section" aria-label="Support services">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Desk</a></li>
+        <li><a href="#">Career Services</a></li>
+        <li><a href="#">Library Services</a></li>
+        <li><a href="#">Job Board</a></li>
+      </ul>
+    </nav>
+
+    <!-- Social Media -->
+    <section class="footer-section social-section" aria-label="Social media">
+  <h4>Connect With Us</h4>
+
+  <div class="social-links">
+    <a href="#" aria-label="COSTAATT on Facebook">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="#" aria-label="COSTAATT on Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="#" aria-label="COSTAATT on LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+    <a href="#" aria-label="COSTAATT on YouTube">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+  </div>
+
+  <!-- Contact info -->
+  <div class="contact-footer">
+    <a href="mailto:info@costaatt.edu.tt">
+      <i class="fa-solid fa-envelope"></i>
+      info@costaatt.edu.tt
+    </a>
+
+    <a href="tel:+18686235030">
+      <i class="fa-brands fa-whatsapp"></i>
+      +1 (868) 625 5030
+    </a>
+  </div>
+    </section>
+  </div>
+</footer>
+</main>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 COSTAATT. All rights reserved.</p>
+  </div>
+
+
+<button
+  id="backToTop"
+  aria-label="Scroll back to top"
+  title="Back to top">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+<script src="../JS/scripts.js" defer></script>
+</body>
+
+
+</html>
+
+
+

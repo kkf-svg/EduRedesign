@@ -9,8 +9,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+   <a href="#main-content" class="skip-link">Skip to main content</a> <!-- adapted from https://www.w3schools.com/accessibility/accessibility_skip_links.php-->
 
-  <!-- Navigation -->
+  <!-- Navigation -->     
   <header class="navbar">
     <!-- Top bar: contact info -->
     <div class="top-bar">
@@ -123,17 +124,24 @@
         </div>
   </header>
 
+ 
+
   <!-- Hero Section -->
    <section class="hero">
   <div class="hero-text">
     <h1>Welcome to COSTAATT</h1>
     <p>Gain Future Skills Now</p>
-    <a href="#" class="btn-apply-now">Apply Now</a>
-    <a href="#" class="btn-apply-now">Check Admission Requirements </a>
+<div class="hero-actions">
+  <a href="#" class="btn-apply-now">Apply Now</a>
+  <a href="#" class="btn-apply-now secondary">Check Admission Requirements</a>
+</div>
+
   </div>
 </section>
 
+
 <!-- Programs Section -->
+ <main id="main-content">
 <section class="program-section">
   <div class="container">
     <h2 class="section-title">Browse Programs</h2>
@@ -222,16 +230,15 @@
         <h4>Expanding Student Horizons: COSTAATT and Academy Canada Partnership.</h4>
         <button class="news-btn">Read More</button>
       </div>
-      
-      
     </div>
-    <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
-    <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
+    <button class="slider-btn prev" >&#10094;</button>
+    <button class="slider-btn next" >&#10095;</button>
   </div>
+  <button class="view-more-btn"> View All News</button>
 </section>
 
 <!--Help Section CTA-->
-<section class="get-help" aria-labelledby="get-help-title">
+<section class="get-help">
   <div class="container">
   <h2 class="section-title">Get Help</h2>
     <p>
@@ -250,7 +257,8 @@
       </a>
 
       <a href="#" class="help-card">
-        <i class="fa-solid fa-comments" aria-hidden="true"></i>
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+
         <span>Chat with Us</span>
       </a>
     </div>
@@ -268,67 +276,51 @@
     <div class="alumni-card-inner">
       <div class="alumni-photo">
         <img src="Img/gabrielle-martin.avif" alt="Gabrielle Martin" loading="lazy">
-
       </div>
-
       <div class="alumni-content">
         <p class="label"><span>Name:</span> Gabrielle Martin</p>
-        <p class="label">
-          <span>Degree Program:</span> AS Spanish
-        </p>
-        <p class="label">
-          <span>Current Role:</span> Entrepreneur, Rejuvinity Body and Nail Spa
-        </p>
-        <p class="label">
-          <span>Achievements:</span>
-         Senior Clerk at Teachers Credit Union Limited. Owens and operates Rejuvinity Body and Nail Spa.
-        </p>
+        <p class="label"><span>Degree Program:</span> AS Spanish</p>
+        <p class="label"><span>Current Role:</span> Entrepreneur, Rejuvinity Body and Nail Spa</p>
+        <p class="label"><span>Achievements:</span> Senior Clerk at Teachers Credit Union Limited. Owens and operates Rejuvinity Body and Nail Spa.</p>
       </div>
     </div>
   </div>
-
 
   <div class="alumni-slide">
     <div class="alumni-card-inner">
       <div class="alumni-photo">
         <img src="Img/ryan.avif" alt="Ryan Bachoo" loading="lazy">
       </div>
-
       <div class="alumni-content">
         <p class="label"><span>Name:</span> Ryan Bachoo</p>
         <p class="label"><span>Degree Program:</span> AAS in Journalism and Public Relations; BA in Mass Communications</p>
         <p class="label"><span>Current Role:</span> Lead Editor – Newsgathering, Guardian Media Limited</p>
-        <p class="label"><span>Achievements:</span> Covered many United Nations events , produced documentaries , won several awards and published a novel.</p>
+        <p class="label"><span>Achievements:</span> Covered many United Nations events, produced documentaries, won awards, published a novel.</p>
       </div>
     </div>
   </div>
-    <div class="alumni-slide">
+
+  <div class="alumni-slide">
     <div class="alumni-card-inner">
       <div class="alumni-photo">
         <img src="Img/Teocah-Arieal-Ainka-Dove.avif" alt="Teocah Arieal Ainka Dove" loading="lazy">
       </div>
-
       <div class="alumni-content">
         <p class="label"><span>Name:</span> Teocah Arieal Ainka Dove</p>
         <p class="label"><span>Degree Program:</span> AAS in Journalism and Public Relations</p>
-        <p class="label"><span>Current Role:</span> Programme Officer – Gender and Entrepreneurship at the Caribbean Export Development Agency</p>
-        <p class="label"><span>Achievements:</span> Leader of the GRIT project to enhance competitive women entrepreneurs , advised major initiatives with USAID, EU, GIZ. Founder  of Hacoet Social Innovative Solutions. Co-Founder of Hacoet Catering and Training Centre </p>
+        <p class="label"><span>Current Role:</span> Programme Officer – Gender and Entrepreneurship at Caribbean Export Development Agency</p>
+        <p class="label"><span>Achievements:</span> Leader of GRIT project, advised initiatives with USAID, EU, GIZ, Founder of Hacoet Social Innovative Solutions, Co-Founder of Hacoet Catering and Training Centre.</p>
       </div>
     </div>
   </div>
 
-  <!-- Navigation -->
   <div class="alumni-nav">
-  <button class="alumni-btn prev" aria-label="Previous Alumni" onclick="plusSlides(-1)">&#10094;</button>
-
-  <!-- Progress bar -->
-  <div class="alumni-progress">
-    <div class="alumni-progress-bar" id="alumniProgress"></div>
+    <button class="alumni-btn prev" aria-label="Previous Alumni">&#10094;</button>
+    <div class="alumni-progress">
+      <div class="alumni-progress-bar" id="alumniProgress"></div>
+    </div>
+    <button class="alumni-btn next" aria-label="Next Alumni">&#10095;</button>
   </div>
-
-  <button class="alumni-btn next" aria-label="Next Alumni" onclick="plusSlides(1)">&#10095;</button>
-</div>
-
 </section>
 
 
@@ -414,19 +406,20 @@
     </a>
 
     <a href="tel:+18686235030">
-      <i class="fa-solid fa-phone"></i>
+      <i class="fa-brands fa-whatsapp"></i>
       +1 (868) 625 5030
     </a>
   </div>
-</section>
+    </section>
   </div>
+</footer>
+</main>
 
   <!-- Bottom Bar -->
   <div class="footer-bottom">
-    <p>&copy; 2024 COSTAATT. All rights reserved.</p>
+    <p>&copy; 2025 COSTAATT. All rights reserved.</p>
   </div>
 
-</footer>
 
 <button
   id="backToTop"
@@ -434,7 +427,6 @@
   title="Back to top">
   <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
 </button>
-
 <script src="JS/scripts.js" defer></script>
 </body>
 </html>
