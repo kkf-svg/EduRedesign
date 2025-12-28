@@ -165,6 +165,60 @@ html, body {
   color: var(--secondary-color);
 }
 
+/* Make all nav items uniform */
+.nav-links a.dropbtn,
+.nav-links button.dropbtn {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1.1rem;
+  padding: 0.5rem 0.75rem;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Keep dropdown icon aligned */
+.nav-links .dropbtn i {
+  margin-left: 0.25rem;
+  font-size: 0.85em;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  background: #fff;
+  color: #333;
+  min-width: 12rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.12);
+  display: none;
+  padding: 0.25rem 0;
+  z-index: 1201;
+}
+
+.has-dropdown.open .dropdown-menu,
+.has-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+ color:var(--secondary-color);
+}
+
+
 /* Dropdown */
 .has-dropdown {
   position: relative;
@@ -1286,6 +1340,89 @@ color: var(--secondary-color);
   background-color: var(--primary-color);
 }
 
+/* Faculty Directory Section */
+
+.faculty-directory {
+  padding: 4rem 0; 
+  background-color: #f4f4f4; 
+}
+
+
+.faculty-directory .section-title {
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--dark-color);
+}
+
+.faculty-directory .section-intro {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+  font-size: 1.05rem;
+  color: var(--dark-color);
+}
+
+
+.faculty-search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.faculty-search-wrapper input {
+  width: 100%;
+  max-width: 480px;
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.faculty-search-wrapper input:focus {
+  border-color: var(--primary-color);
+}
+
+
+.faculty-list {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.faculty-list li {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.faculty-list li.section-label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  color: var(--primary-color);
+}
+
+.faculty-list li a {
+  text-decoration: none;
+  color: var(--dark-color);
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.faculty-list li a:hover {
+  color: var(--secondary-color);
+}
+
+.financial-card svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  fill: var(--primary-color);
+}
+
 
 
 /* ===== Mobile styles ===== */
@@ -1517,7 +1654,26 @@ color: var(--secondary-color);
   }
 }
 
+/*Tablet breakpoint*/
 @media (max-width: 1024px) and (min-width: 769px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-search {
+    display: flex;
+  }
+
+  .menu-panel {
+    position: static;
+    background: transparent;
+    flex-direction: row;
+    align-items: center;
+  }
   .footer-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -1532,7 +1688,18 @@ color: var(--secondary-color);
   .social-links {
     justify-content: center;
   }
+
+  .testimonial-prev,
+  .testimonial-next {
+    width: 50px;
+    height: 50px;
+    font-size: 1.8rem;
+    padding: 0;
+  }
+  .testimonial-prev { left: -1rem; }
+  .testimonial-next { right: -1rem; }
 }
+
 
 /* Extra small devices <=480px */
 @media(max-width: 30rem) {

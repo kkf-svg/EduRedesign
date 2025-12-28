@@ -86,6 +86,7 @@ const megaModalOverlay = document.querySelector(".mega-modal-overlay");
 const megaMenuTrigger  = document.querySelector(".admission-mega-menu-trigger");
 const megaCloseBtn     = document.querySelector(".mega-close");
 
+
 // Modal function
 function showModal() {
   megaModalOverlay.style.display = "flex";
@@ -128,6 +129,40 @@ document.addEventListener("keydown", function(event) {
     megaMenuTrigger.focus();
   }
 });
+// ===================== MEGA MENU FILTER adapted from https://www.w3schools.com/howto/howto_js_filter_lists.asp
+const programFilter = document.getElementById("program-filter");
+
+programFilter?.addEventListener("keyup", function () {
+  const filter = this.value.toLowerCase();
+
+  // Each programme category block
+  const categories = document.querySelectorAll(".subcolumns");
+
+  categories.forEach(category => {
+    const heading = category.querySelector("h4")?.textContent.toLowerCase() || "";
+    const items = category.querySelectorAll("li a");
+
+    let categoryMatch = heading.includes(filter);
+    let itemMatchFound = false;
+
+    items.forEach(link => {
+      const text = link.textContent.toLowerCase();
+      const li = link.parentElement;
+
+      if (text.includes(filter) || categoryMatch) {
+        li.style.display = "";
+        itemMatchFound = true;
+      } else {
+        li.style.display = "none";
+      }
+    });
+
+    // Hide entire category if nothing matches
+    category.style.display = itemMatchFound ? "" : "none";
+  });
+});
+
+
 
 
   // ===================== ALUMNI SLIDER =====================
@@ -166,6 +201,8 @@ document.addEventListener("keydown", function(event) {
   function stopAlumniAutoSlide() {
     clearInterval(autoSlideInterval);
   }
+
+ 
 
    //update progress bar adapted from https://www.w3schools.com/howto/howto_js_progressbar.asp
   function updateProgress(index) {
@@ -211,7 +248,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-//slideshow logic for testimonials adapted from: https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp
+//slideshow logic for testimonials taken from: https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -241,4 +278,23 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
+// Filter and search taken from https://www.w3schools.com/howto/howto_js_filter_lists.asp
+function myFunction() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("facultyList"); 
+  li = ul.getElementsByTagName('li');
 
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if(a) {
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+}

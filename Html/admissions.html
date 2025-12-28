@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Apply to COSTAATT with ease. Explore programmes, admissions requirements, financial aid options, and student support services designed to help you succeed.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-COSTAATT</title>
+    <title>Admissions-COSTAATT</title>
     <link rel="stylesheet" href="../CSS/styles.css">
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -15,23 +15,20 @@
 </head>
 <body>
  <a href="#main-content" class="skip-link">Skip to main content</a>
-  <!-- Navigation -->
+  <!-- Navigation -->     
   <header class="navbar">
-    <!-- Top bar: contact info -->
-    <div class="top-bar">
+  <!-- Top bar -->
+  <div class="top-bar">
     <div class="container top-bar-content">
       <div class="contact">
         <a href="mailto:info@costaatt.edu.tt">
-          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-          Email Us
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>Email Us
         </a>
         <span class="separator">|</span>
         <a href="tel:+18686235030">
-          <i class="fa-solid fa-phone" aria-hidden="true"></i>
-          +1 (868) 625 5030
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>+1 (868) 625 5030
         </a>
       </div>
-
       <div class="top-actions">
         <a href="#" class="link-procurement">Procurement</a>
         <a href="#" class="btn-my-costaatt">My COSTAATT</a>
@@ -39,43 +36,43 @@
       </div>
     </div>
   </div>
-    <div class="container nav-content">
-      <a href="../index.html" class="logo" aria-label="COSTAATT home">
-        <img src="../Img/site-logo-new.svg" alt="COSTAATT logo"  fetchpriority="high">
-      </a>
 
-      <!-- Mobile toggle button -->
-      <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
-        <i class="fa-solid fa-bars" aria-hidden="true"></i>
-      </button>
-      
+  <div class="container nav-content">
+    <a href="../index.html" class="logo" aria-label="COSTAATT home">
+      <img src="../Img/site-logo-new.svg" alt="COSTAATT logo" fetchpriority="high">
+    </a>
 
-      <!--main navigation panel -->
-      <div class="menu-panel">
- <nav class="menu" aria-label="Main navigation">
+    <!-- Mobile toggle -->
+    <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <!-- Main navigation -->
+    <div class="menu-panel">
+      <nav class="menu" aria-label="Main navigation">
         <ul class="nav-links">
-         <li class="dropdown has-dropdown">
-          <a href="Html/admissions.html" class="dropbtn dropdown-toggle" aria-expanded="false">
-            Admissions <i class="fa-solid fa-caret-down"></i>
-          </a>
-          <ul class="dropdown-content dropdown-menu">
-            <li><a href="#">Admission Counselors</a></li>
-            <li><a href="#">Application Process</a></li>
-            <li><a href="#">Financing</a></li>
-            <li><a href="Html/admissions.html">Programme Details</a></li>
-          </ul>
-        </li>
           <li class="dropdown has-dropdown">
-            <button class="dropbtn dropdown-toggle" aria-expanded="false">Academics <i class="fa-solid fa-caret-down"></i></button>
-            <ul class="dropdown-content dropdown-menu">
+            <a href="#" class="dropbtn">Admissions <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Admission Counselors</a></li>
+              <li><a href="#">Application Process</a></li>
+              <li><a href="#">Financing</a></li>
+              <li><a href="#">Programme Details</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown has-dropdown">
+            <button class="dropbtn">Academics <i class="fa-solid fa-caret-down"></i></button>
+            <ul class="dropdown-menu">
               <li><a href="#">Programme Categories</a></li>
               <li><a href="#">Programme Details</a></li>
               <li><a href="#">Departments</a></li>
             </ul>
           </li>
+
           <li class="dropdown has-dropdown">
-            <button class="dropbtn dropdown-toggle" aria-expanded="false">Student Life <i class="fa-solid fa-caret-down"></i></button>
-            <ul class="dropdown-content dropdown-menu">
+            <button class="dropbtn">Student Life <i class="fa-solid fa-caret-down"></i></button>
+            <ul class="dropdown-menu">
               <li><a href="#">Campus Facilities</a></li>
               <li><a href="#">Campus Life</a></li>
               <li><a href="#">Clubs & Activities</a></li>
@@ -92,15 +89,17 @@
               <li><a href="#">COSTAATT Goes Cashless</a></li>
             </ul>
           </li>
+
           <li class="dropdown has-dropdown">
-            <button class="dropbtn dropdown-toggle" aria-expanded="false">Faculty <i class="fa-solid fa-caret-down"></i></button>
-            <ul class="dropdown-content dropdown-menu">
+            <a href="../Html/faculty.html" class="dropbtn">Faculty Directory<i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
               <li><a href="#">Faculty & Staff Profiles</a></li>
             </ul>
           </li>
+
           <li class="dropdown has-dropdown">
-            <button class="dropbtn dropdown-toggle" aria-expanded="false">About Us <i class="fa-solid fa-caret-down"></i></button>
-            <ul class="dropdown-content dropdown-menu">
+            <button class="dropbtn">About Us <i class="fa-solid fa-caret-down"></i></button>
+            <ul class="dropdown-menu">
               <li><a href="#">About COSTAATT</a></li>
               <li><a href="#">Executive Leadership</a></li>
               <li><a href="#">COSTAATT Techhub</a></li>
@@ -113,18 +112,19 @@
           </li>
         </ul>
       </nav>
-      </div>
+    </div>
 
-
-        <div class="nav-search">
-          <form action="#" role="search">
-            <label for="site-search" class="sr-only">Search the site</label>
-            <input id="site-search" name="q" type="search" placeholder="Search">
-            <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
-          </form>
-        </div>
-        </div>
-  </header>
+    <div class="nav-search">
+      <form action="#" role="search">
+        <label for="site-search" class="sr-only">Search the site</label>
+        <input id="site-search" name="q" type="search" placeholder="Search">
+        <button type="submit" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
 
   <!--end of main navigation panel -->
 <!-- Hero Content -->
